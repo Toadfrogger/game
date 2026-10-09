@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+  </head>
+  <body style="background-color: rgb(78, 158, 228)">
+    Enter your name: <br />
+    <input
+      type="text"
+      id="nameInput"
+      class="nameInput"
+      placeholder="Enter your name"
+    />
+    <button class="button is-black" onclick="displayWelcome()">Submit</button>
+
+    <div id="Welcome"></div>
+    <script>
+      function displayWelcome() {
+        const myInput = document.getElementById("nameInput");
+        const welcomeEl = document.getElementById("Welcome");
+
+        welcomeEl.textContent = "Welcome, " + myInput.value + "! :)";
+      }
+    </script>
+
+    <div>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 200px;
+        "
+      >
+        <h1>Arin</h1>
+        <div>LVL5</div>
+      </div>
+      <div>
+        <progress class="progressbox" value="45" max="100">45%</progress><br />
+        <button class="button is-danger is-dark">
+          <i
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-swords"
+            >
+              <path d="m13 19 6-6" />
+              <path
+                d="M14.5 17.5 3.586 6.586A2 2 0 013 5.172V3h2.172a2 2 0 011.414.586L17.5 14.5"
+              />
+              <path
+                d="m14.828 6.172 2.586-2.586A2 2 0 0118.828 3H21v2.172a2 2 0 01-.586 1.414l-2.586 2.586"
+              />
+              <path d="m16 16 4 4" />
+              <path d="m19 21 2-2" />
+              <path d="m5 14 4 4" />
+              <path d="m5 21-2-2" />
+              <path d="M7.5 16.5 4 20" /></svg></i
+          >Attack
+        </button>
+        <button class="button is-link">
+          <i
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-sparkles"
+            >
+              <path
+                d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"
+              />
+              <path d="M20 2v4" />
+              <path d="M22 4h-4" />
+              <circle cx="4" cy="20" r="2" /></svg></i
+          >Heal
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Hello, World!
+    <p id="demo"></p>
+    <script>
+      const firstname = prompt("What is your first name?");
+      alert("Hello, " + firstname + "!");
+      let age = Number(prompt("What is your age?"));
+
+      let year = 2026 - age;
+      alert("Hello," + firstname + "! You are born in " + year + ".");
+      const n1 = prompt("Enter first number");
+      const n2 = prompt("Enter second number");
+      const sum = Number(n1) + Number(n2);
+      console.log("The sum of " + n1 + " and " + n2 + " is " + sum);
+
+      const width = Number(prompt("Enter the width of the rectangle:"));
+      const height = Number(prompt("Enter the height of the rectangle:"));
+      const area = width * height;
+      const perimeter = 2 * (width + height);
+      console.log("The area if the rectagle is " + area);
+      console.log("The perimeter of the rectangle is " + perimeter);
+
+      const Price = Number(prompt("Enter the price of the item:"));
+      const amount = Number(
+        prompt("Enter the amount of the item that you will buy:"),
+      );
+      const total = Price * amount;
+      console.log("The total cost is " + total + ".");
+
+      const celcius = Number(prompt("Enter temperature in Celcius:"));
+      const farenheit = (celcius * 9) / 5 + 32;
+      console.log(celcius + "celcius is" + farenheit + "farenheits.");
+
+      const number1 = Number(prompt("Enter first number:"));
+      const number2 = Number(prompt("Enter second number:"));
+      const sum1 = number1 + number2;
+      const difference = number1 - number2;
+      const multiplication = number1 * number2;
+      const division = number1 / number2;
+      console.log("The sum of " + number1 + " and " + number2 + " is " + sum1);
+      console.log(
+        "The difference of " +
+          number1 +
+          " and " +
+          number2 +
+          " is " +
+          difference,
+      );
+      console.log(
+        "The multiplication of " +
+          number1 +
+          " and " +
+          number2 +
+          " is " +
+          multiplication,
+      );
+      console.log(
+        "The division of " + number1 + " and " + number2 + " is " + division,
+      );
+
+      const avnum1 = Number(prompt("Enter the first number"));
+      const avnum2 = Number(prompt("Enter the second number"));
+      const avnum3 = Number(prompt("Enter third number"));
+      const average = (avnum1 + avnum2 + avnum3) / 3;
+      console.log("The average of the three numbers is" + average);
+
+      const bill = Number(prompt("Enter the bill"));
+      const people = Number(prompt("Enter the number of people"));
+      const split = bill / people;
+      alert(people + "will pay" + split);
+    </script>
+  </body>
+</html>
